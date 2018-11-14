@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Core_Data_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYz-7y-Ma3">
+                                <rect key="frame" x="16" y="36" width="55" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXc-vj-Cqz">
+                                <rect key="frame" x="16" y="65" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Major :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZw-7K-vSP">
+                                <rect key="frame" x="16" y="103" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33h-eO-JJ0">
+                                <rect key="frame" x="16" y="132" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student ID :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hV8-Uo-vzw">
+                                <rect key="frame" x="16" y="170" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="to1-IP-6WB">
+                                <rect key="frame" x="16" y="199" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMo-2t-Hso">
+                                <rect key="frame" x="16" y="237" width="343" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Add A New Student Record">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addRecord:" destination="BYZ-38-t0r" eventType="touchDown" id="Fh6-mV-UiO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOp-MG-9pd">
+                                <rect key="frame" x="16" y="275" width="343" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Show All Records">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAllRecord:" destination="BYZ-38-t0r" eventType="touchDown" id="PQH-xH-dk4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBt-bW-WdM">
+                                <rect key="frame" x="16" y="313" width="343" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Find A Record By Name">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="findRecord:" destination="BYZ-38-t0r" eventType="touchDown" id="E44-3W-Onj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXC-k4-IJD">
+                                <rect key="frame" x="16" y="351" width="343" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Update A Record By Name">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateRecord:" destination="BYZ-38-t0r" eventType="touchDown" id="YEA-b2-b6c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzs-gZ-eBX">
+                                <rect key="frame" x="16" y="389" width="343" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Delete A Record By Name">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteRecord:" destination="BYZ-38-t0r" eventType="touchDown" id="VL3-QH-mXA"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Student record are shown here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K14-8X-Sg3">
+                                <rect key="frame" x="16" y="427" width="343" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bzs-gZ-eBX" secondAttribute="trailing" constant="16" id="3fs-as-u40"/>
+                            <constraint firstItem="hV8-Uo-vzw" firstAttribute="top" secondItem="33h-eO-JJ0" secondAttribute="bottom" constant="8" id="4Me-Cp-sz5"/>
+                            <constraint firstItem="bzs-gZ-eBX" firstAttribute="top" secondItem="gXC-k4-IJD" secondAttribute="bottom" constant="8" id="7Kt-cp-3VX"/>
+                            <constraint firstItem="33h-eO-JJ0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7qx-ge-RKA"/>
+                            <constraint firstItem="EMo-2t-Hso" firstAttribute="top" secondItem="to1-IP-6WB" secondAttribute="bottom" constant="8" id="9eg-RB-gfJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="to1-IP-6WB" secondAttribute="trailing" constant="16" id="ABm-XX-8Q7"/>
+                            <constraint firstItem="K14-8X-Sg3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Bc1-An-dBf"/>
+                            <constraint firstItem="bzs-gZ-eBX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="CMk-Lf-Zjh"/>
+                            <constraint firstItem="NBt-bW-WdM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EYU-CI-aOX"/>
+                            <constraint firstItem="AXc-vj-Cqz" firstAttribute="top" secondItem="eYz-7y-Ma3" secondAttribute="bottom" constant="8" id="LIt-dq-5u1"/>
+                            <constraint firstItem="VOp-MG-9pd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MiV-hm-qfG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NBt-bW-WdM" secondAttribute="trailing" constant="16" id="NJH-u2-cUq"/>
+                            <constraint firstItem="to1-IP-6WB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ny2-iv-swg"/>
+                            <constraint firstItem="gXC-k4-IJD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="OGZ-uL-7Cb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EMo-2t-Hso" secondAttribute="trailing" constant="16" id="OTe-jp-LRx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="33h-eO-JJ0" secondAttribute="trailing" constant="16" id="Qui-0Z-5cT"/>
+                            <constraint firstItem="dZw-7K-vSP" firstAttribute="top" secondItem="AXc-vj-Cqz" secondAttribute="bottom" constant="8" id="Rev-ra-nEW"/>
+                            <constraint firstItem="EMo-2t-Hso" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RzW-rt-xJ7"/>
+                            <constraint firstItem="eYz-7y-Ma3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VQX-ok-iYa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VOp-MG-9pd" secondAttribute="trailing" constant="16" id="VYn-uI-7i3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AXc-vj-Cqz" secondAttribute="trailing" constant="16" id="Wvb-C6-B7b"/>
+                            <constraint firstItem="hV8-Uo-vzw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="akz-VX-2qn"/>
+                            <constraint firstItem="33h-eO-JJ0" firstAttribute="top" secondItem="dZw-7K-vSP" secondAttribute="bottom" constant="8" id="ayH-sm-O0n"/>
+                            <constraint firstItem="K14-8X-Sg3" firstAttribute="top" secondItem="bzs-gZ-eBX" secondAttribute="bottom" constant="8" id="e1O-Vx-8Vk"/>
+                            <constraint firstItem="eYz-7y-Ma3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="eR5-T3-ARw"/>
+                            <constraint firstItem="VOp-MG-9pd" firstAttribute="top" secondItem="EMo-2t-Hso" secondAttribute="bottom" constant="8" id="eaF-oC-2B4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K14-8X-Sg3" secondAttribute="trailing" constant="16" id="ewO-Q7-gOO"/>
+                            <constraint firstItem="NBt-bW-WdM" firstAttribute="top" secondItem="VOp-MG-9pd" secondAttribute="bottom" constant="8" id="fbv-Dp-3hI"/>
+                            <constraint firstItem="gXC-k4-IJD" firstAttribute="top" secondItem="NBt-bW-WdM" secondAttribute="bottom" constant="8" id="ids-8E-n3N"/>
+                            <constraint firstItem="K14-8X-Sg3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ly5-z4-vtP"/>
+                            <constraint firstItem="to1-IP-6WB" firstAttribute="top" secondItem="hV8-Uo-vzw" secondAttribute="bottom" constant="8" id="nOn-8l-d4e"/>
+                            <constraint firstItem="dZw-7K-vSP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="u5u-X3-FV7"/>
+                            <constraint firstItem="AXc-vj-Cqz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vZl-j9-geh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gXC-k4-IJD" secondAttribute="trailing" constant="16" id="wst-5s-zJe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="idTextField" destination="to1-IP-6WB" id="uB6-bB-jQ8"/>
+                        <outlet property="majorTextField" destination="33h-eO-JJ0" id="sFp-cj-ipq"/>
+                        <outlet property="nameTextField" destination="AXc-vj-Cqz" id="NM4-L6-y8a"/>
+                        <outlet property="textView" destination="K14-8X-Sg3" id="22B-YH-TvW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
