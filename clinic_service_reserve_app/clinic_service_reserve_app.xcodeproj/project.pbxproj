@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C8C51A1FE88B0045677928C /* Pods_clinic_service_reserve_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D044A5B64586AE32380E8C60 /* Pods_clinic_service_reserve_app.framework */; };
+		5A12751C219591DA0043C265 /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A12751B219591DA0043C265 /* ReserveViewController.swift */; };
+		5A3D6B53219564DA00A91F33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3D6B52219564DA00A91F33 /* AppDelegate.swift */; };
+		5A3D6B55219564DA00A91F33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3D6B54219564DA00A91F33 /* ViewController.swift */; };
+		5A3D6B58219564DA00A91F33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D6B56219564DA00A91F33 /* Main.storyboard */; };
+		5A3D6B5A219564DC00A91F33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D6B59219564DC00A91F33 /* Assets.xcassets */; };
+		5A3D6B5D219564DC00A91F33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D6B5B219564DC00A91F33 /* LaunchScreen.storyboard */; };
+		5A3D6B68219564DC00A91F33 /* clinic_service_reserve_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3D6B67219564DC00A91F33 /* clinic_service_reserve_appTests.swift */; };
+		5A3D6B73219564DC00A91F33 /* clinic_service_reserve_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3D6B72219564DC00A91F33 /* clinic_service_reserve_appUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A3D6B64219564DC00A91F33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A3D6B47219564DA00A91F33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A3D6B4E219564DA00A91F33;
+			remoteInfo = clinic_service_reserve_app;
+		};
+		5A3D6B6F219564DC00A91F33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A3D6B47219564DA00A91F33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A3D6B4E219564DA00A91F33;
+			remoteInfo = clinic_service_reserve_app;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		168565A8075DD0813C327A58 /* Pods-clinic_service_reserve_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clinic_service_reserve_app.release.xcconfig"; path = "Pods/Target Support Files/Pods-clinic_service_reserve_app/Pods-clinic_service_reserve_app.release.xcconfig"; sourceTree = "<group>"; };
+		5A12751B219591DA0043C265 /* ReserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
+		5A1977C321958195003F4B29 /* clinic_service_reserve_app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "clinic_service_reserve_app-Bridging-Header.h"; sourceTree = "<group>"; };
+		5A3D6B4F219564DA00A91F33 /* clinic_service_reserve_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clinic_service_reserve_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3D6B52219564DA00A91F33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A3D6B54219564DA00A91F33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A3D6B57219564DA00A91F33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A3D6B59219564DC00A91F33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A3D6B5C219564DC00A91F33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A3D6B5E219564DC00A91F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A3D6B63219564DC00A91F33 /* clinic_service_reserve_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clinic_service_reserve_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3D6B67219564DC00A91F33 /* clinic_service_reserve_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clinic_service_reserve_appTests.swift; sourceTree = "<group>"; };
+		5A3D6B69219564DC00A91F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A3D6B6E219564DC00A91F33 /* clinic_service_reserve_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clinic_service_reserve_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3D6B72219564DC00A91F33 /* clinic_service_reserve_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clinic_service_reserve_appUITests.swift; sourceTree = "<group>"; };
+		5A3D6B74219564DC00A91F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AB42B59219AB21B00920E70 /* clinic_service_reserve_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = clinic_service_reserve_app.entitlements; sourceTree = "<group>"; };
+		98E6A9D8F1F81A5A9FEC500B /* Pods-clinic_service_reserve_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clinic_service_reserve_app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-clinic_service_reserve_app/Pods-clinic_service_reserve_app.debug.xcconfig"; sourceTree = "<group>"; };
+		D044A5B64586AE32380E8C60 /* Pods_clinic_service_reserve_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_clinic_service_reserve_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A3D6B4C219564DA00A91F33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8C51A1FE88B0045677928C /* Pods_clinic_service_reserve_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3D6B60219564DC00A91F33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3D6B6B219564DC00A91F33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DFC129E162D6D0950856ED2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98E6A9D8F1F81A5A9FEC500B /* Pods-clinic_service_reserve_app.debug.xcconfig */,
+				168565A8075DD0813C327A58 /* Pods-clinic_service_reserve_app.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A3D6B46219564DA00A91F33 = {
+			isa = PBXGroup;
+			children = (
+				5A3D6B51219564DA00A91F33 /* clinic_service_reserve_app */,
+				5A3D6B66219564DC00A91F33 /* clinic_service_reserve_appTests */,
+				5A3D6B71219564DC00A91F33 /* clinic_service_reserve_appUITests */,
+				5A3D6B50219564DA00A91F33 /* Products */,
+				1DFC129E162D6D0950856ED2 /* Pods */,
+				CFDEF5BE5C38F76BE6E56CCA /* Frameworks */,
+				5A1977C321958195003F4B29 /* clinic_service_reserve_app-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		5A3D6B50219564DA00A91F33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A3D6B4F219564DA00A91F33 /* clinic_service_reserve_app.app */,
+				5A3D6B63219564DC00A91F33 /* clinic_service_reserve_appTests.xctest */,
+				5A3D6B6E219564DC00A91F33 /* clinic_service_reserve_appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A3D6B51219564DA00A91F33 /* clinic_service_reserve_app */ = {
+			isa = PBXGroup;
+			children = (
+				5AB42B59219AB21B00920E70 /* clinic_service_reserve_app.entitlements */,
+				5A3D6B52219564DA00A91F33 /* AppDelegate.swift */,
+				5A3D6B54219564DA00A91F33 /* ViewController.swift */,
+				5A12751B219591DA0043C265 /* ReserveViewController.swift */,
+				5A3D6B56219564DA00A91F33 /* Main.storyboard */,
+				5A3D6B59219564DC00A91F33 /* Assets.xcassets */,
+				5A3D6B5B219564DC00A91F33 /* LaunchScreen.storyboard */,
+				5A3D6B5E219564DC00A91F33 /* Info.plist */,
+			);
+			path = clinic_service_reserve_app;
+			sourceTree = "<group>";
+		};
+		5A3D6B66219564DC00A91F33 /* clinic_service_reserve_appTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A3D6B67219564DC00A91F33 /* clinic_service_reserve_appTests.swift */,
+				5A3D6B69219564DC00A91F33 /* Info.plist */,
+			);
+			path = clinic_service_reserve_appTests;
+			sourceTree = "<group>";
+		};
+		5A3D6B71219564DC00A91F33 /* clinic_service_reserve_appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5A3D6B72219564DC00A91F33 /* clinic_service_reserve_appUITests.swift */,
+				5A3D6B74219564DC00A91F33 /* Info.plist */,
+			);
+			path = clinic_service_reserve_appUITests;
+			sourceTree = "<group>";
+		};
+		CFDEF5BE5C38F76BE6E56CCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D044A5B64586AE32380E8C60 /* Pods_clinic_service_reserve_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A3D6B4E219564DA00A91F33 /* clinic_service_reserve_app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A3D6B77219564DC00A91F33 /* Build configuration list for PBXNativeTarget "clinic_service_reserve_app" */;
+			buildPhases = (
+				D302D018ECA8CEF2F3BEE276 /* [CP] Check Pods Manifest.lock */,
+				5A3D6B4B219564DA00A91F33 /* Sources */,
+				5A3D6B4C219564DA00A91F33 /* Frameworks */,
+				5A3D6B4D219564DA00A91F33 /* Resources */,
+				BEFB4581BA1F1DC0F9DA38CA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = clinic_service_reserve_app;
+			productName = clinic_service_reserve_app;
+			productReference = 5A3D6B4F219564DA00A91F33 /* clinic_service_reserve_app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A3D6B62219564DC00A91F33 /* clinic_service_reserve_appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A3D6B7A219564DC00A91F33 /* Build configuration list for PBXNativeTarget "clinic_service_reserve_appTests" */;
+			buildPhases = (
+				5A3D6B5F219564DC00A91F33 /* Sources */,
+				5A3D6B60219564DC00A91F33 /* Frameworks */,
+				5A3D6B61219564DC00A91F33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A3D6B65219564DC00A91F33 /* PBXTargetDependency */,
+			);
+			name = clinic_service_reserve_appTests;
+			productName = clinic_service_reserve_appTests;
+			productReference = 5A3D6B63219564DC00A91F33 /* clinic_service_reserve_appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A3D6B6D219564DC00A91F33 /* clinic_service_reserve_appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A3D6B7D219564DC00A91F33 /* Build configuration list for PBXNativeTarget "clinic_service_reserve_appUITests" */;
+			buildPhases = (
+				5A3D6B6A219564DC00A91F33 /* Sources */,
+				5A3D6B6B219564DC00A91F33 /* Frameworks */,
+				5A3D6B6C219564DC00A91F33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A3D6B70219564DC00A91F33 /* PBXTargetDependency */,
+			);
+			name = clinic_service_reserve_appUITests;
+			productName = clinic_service_reserve_appUITests;
+			productReference = 5A3D6B6E219564DC00A91F33 /* clinic_service_reserve_appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A3D6B47219564DA00A91F33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Kwong Hau Shing";
+				TargetAttributes = {
+					5A3D6B4E219564DA00A91F33 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					5A3D6B62219564DC00A91F33 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5A3D6B4E219564DA00A91F33;
+					};
+					5A3D6B6D219564DC00A91F33 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5A3D6B4E219564DA00A91F33;
+					};
+				};
+			};
+			buildConfigurationList = 5A3D6B4A219564DA00A91F33 /* Build configuration list for PBXProject "clinic_service_reserve_app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A3D6B46219564DA00A91F33;
+			productRefGroup = 5A3D6B50219564DA00A91F33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A3D6B4E219564DA00A91F33 /* clinic_service_reserve_app */,
+				5A3D6B62219564DC00A91F33 /* clinic_service_reserve_appTests */,
+				5A3D6B6D219564DC00A91F33 /* clinic_service_reserve_appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A3D6B4D219564DA00A91F33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3D6B5D219564DC00A91F33 /* LaunchScreen.storyboard in Resources */,
+				5A3D6B5A219564DC00A91F33 /* Assets.xcassets in Resources */,
+				5A3D6B58219564DA00A91F33 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3D6B61219564DC00A91F33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3D6B6C219564DC00A91F33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BEFB4581BA1F1DC0F9DA38CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-clinic_service_reserve_app/Pods-clinic_service_reserve_app-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaMQTT/CocoaMQTT.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaMQTT.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-clinic_service_reserve_app/Pods-clinic_service_reserve_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D302D018ECA8CEF2F3BEE276 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-clinic_service_reserve_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A3D6B4B219564DA00A91F33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3D6B55219564DA00A91F33 /* ViewController.swift in Sources */,
+				5A3D6B53219564DA00A91F33 /* AppDelegate.swift in Sources */,
+				5A12751C219591DA0043C265 /* ReserveViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3D6B5F219564DC00A91F33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3D6B68219564DC00A91F33 /* clinic_service_reserve_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3D6B6A219564DC00A91F33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3D6B73219564DC00A91F33 /* clinic_service_reserve_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A3D6B65219564DC00A91F33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A3D6B4E219564DA00A91F33 /* clinic_service_reserve_app */;
+			targetProxy = 5A3D6B64219564DC00A91F33 /* PBXContainerItemProxy */;
+		};
+		5A3D6B70219564DC00A91F33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A3D6B4E219564DA00A91F33 /* clinic_service_reserve_app */;
+			targetProxy = 5A3D6B6F219564DC00A91F33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A3D6B56219564DA00A91F33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A3D6B57219564DA00A91F33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A3D6B5B219564DC00A91F33 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A3D6B5C219564DC00A91F33 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A3D6B75219564DC00A91F33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A3D6B76219564DC00A91F33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A3D6B78219564DC00A91F33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98E6A9D8F1F81A5A9FEC500B /* Pods-clinic_service_reserve_app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = clinic_service_reserve_app/clinic_service_reserve_app.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5JGJ4ARXZ;
+				INFOPLIST_FILE = clinic_service_reserve_app/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lab3.clinic-service-reserve-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "clinic_service_reserve_app-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A3D6B79219564DC00A91F33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 168565A8075DD0813C327A58 /* Pods-clinic_service_reserve_app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = clinic_service_reserve_app/clinic_service_reserve_app.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5JGJ4ARXZ;
+				INFOPLIST_FILE = clinic_service_reserve_app/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lab3.clinic-service-reserve-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "clinic_service_reserve_app-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A3D6B7B219564DC00A91F33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = clinic_service_reserve_appTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lab3.clinic-service-reserve-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/clinic_service_reserve_app.app/clinic_service_reserve_app";
+			};
+			name = Debug;
+		};
+		5A3D6B7C219564DC00A91F33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = clinic_service_reserve_appTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lab3.clinic-service-reserve-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/clinic_service_reserve_app.app/clinic_service_reserve_app";
+			};
+			name = Release;
+		};
+		5A3D6B7E219564DC00A91F33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = clinic_service_reserve_appUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lab3.clinic-service-reserve-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = clinic_service_reserve_app;
+			};
+			name = Debug;
+		};
+		5A3D6B7F219564DC00A91F33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = clinic_service_reserve_appUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lab3.clinic-service-reserve-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = clinic_service_reserve_app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A3D6B4A219564DA00A91F33 /* Build configuration list for PBXProject "clinic_service_reserve_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3D6B75219564DC00A91F33 /* Debug */,
+				5A3D6B76219564DC00A91F33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A3D6B77219564DC00A91F33 /* Build configuration list for PBXNativeTarget "clinic_service_reserve_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3D6B78219564DC00A91F33 /* Debug */,
+				5A3D6B79219564DC00A91F33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A3D6B7A219564DC00A91F33 /* Build configuration list for PBXNativeTarget "clinic_service_reserve_appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3D6B7B219564DC00A91F33 /* Debug */,
+				5A3D6B7C219564DC00A91F33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A3D6B7D219564DC00A91F33 /* Build configuration list for PBXNativeTarget "clinic_service_reserve_appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3D6B7E219564DC00A91F33 /* Debug */,
+				5A3D6B7F219564DC00A91F33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A3D6B47219564DA00A91F33 /* Project object */;
+}

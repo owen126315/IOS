@@ -1,0 +1,6 @@
+framework module Pods_clinic_service_reserve_app {
+  umbrella header "Pods-clinic_service_reserve_app-umbrella.h"
+
+  export *
+  module * { export * }
+}

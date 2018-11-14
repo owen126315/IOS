@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tryMQTT2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="arB-xG-04y">
+                                <rect key="frame" x="255" y="170" width="51" height="31"/>
+                                <connections>
+                                    <action selector="gpio40SW:" destination="BYZ-38-t0r" eventType="valueChanged" id="sCw-gf-81r"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0X-Fs-EiE">
+                                <rect key="frame" x="148" y="420" width="78" height="30"/>
+                                <state key="normal" title="Disconnect"/>
+                                <connections>
+                                    <action selector="disconnectButton:" destination="BYZ-38-t0r" eventType="touchDown" id="nLt-yC-Ffj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPIO PIN 40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyY-9S-4tV">
+                                <rect key="frame" x="89" y="176" width="97" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ytM-ow-zGA">
+                                <rect key="frame" x="129" y="226" width="199" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DHX-t5-eql"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="received:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaW-dv-31a">
+                                <rect key="frame" x="51" y="231" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="arB-xG-04y" firstAttribute="leading" secondItem="oyY-9S-4tV" secondAttribute="trailing" constant="69" id="35Y-N0-bmi"/>
+                            <constraint firstItem="MaW-dv-31a" firstAttribute="top" secondItem="oyY-9S-4tV" secondAttribute="bottom" constant="35" id="42Z-VR-tBh"/>
+                            <constraint firstItem="MaW-dv-31a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="4VL-X0-KZF"/>
+                            <constraint firstItem="MaW-dv-31a" firstAttribute="centerY" secondItem="ytM-ow-zGA" secondAttribute="centerY" id="4mk-Vy-wZO"/>
+                            <constraint firstItem="oyY-9S-4tV" firstAttribute="centerY" secondItem="arB-xG-04y" secondAttribute="centerY" id="6bp-pq-r6H"/>
+                            <constraint firstItem="oyY-9S-4tV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="89" id="DBP-ki-H3X"/>
+                            <constraint firstItem="ytM-ow-zGA" firstAttribute="top" secondItem="arB-xG-04y" secondAttribute="bottom" constant="25" id="IL6-eT-iw8"/>
+                            <constraint firstItem="ytM-ow-zGA" firstAttribute="leading" secondItem="MaW-dv-31a" secondAttribute="trailing" constant="8" symbolic="YES" id="PMj-1h-GDn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MaW-dv-31a" secondAttribute="bottom" constant="415" id="Rmt-Dx-bdC"/>
+                            <constraint firstItem="i0X-Fs-EiE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TC3-E4-tY2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="i0X-Fs-EiE" secondAttribute="bottom" constant="217" id="VDE-CV-Mol"/>
+                            <constraint firstItem="arB-xG-04y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="ZqE-xi-WC0"/>
+                            <constraint firstItem="i0X-Fs-EiE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="148" id="hke-H7-nSe"/>
+                            <constraint firstItem="ytM-ow-zGA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="226" id="j9H-6B-knd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ytM-ow-zGA" secondAttribute="trailing" constant="47" id="nJN-8C-iSQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="receiveMessage" destination="ytM-ow-zGA" id="FrF-gH-VLa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="124.58770614692655"/>
+        </scene>
+    </scenes>
+</document>
