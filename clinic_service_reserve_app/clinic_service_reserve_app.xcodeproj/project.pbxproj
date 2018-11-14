@@ -14,8 +14,7 @@
 		5A3D6B58219564DA00A91F33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D6B56219564DA00A91F33 /* Main.storyboard */; };
 		5A3D6B5A219564DC00A91F33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D6B59219564DC00A91F33 /* Assets.xcassets */; };
 		5A3D6B5D219564DC00A91F33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D6B5B219564DC00A91F33 /* LaunchScreen.storyboard */; };
-		5A3D6B68219564DC00A91F33 /* clinic_service_reserve_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3D6B67219564DC00A91F33 /* clinic_service_reserve_appTests.swift */; };
-		5A3D6B73219564DC00A91F33 /* clinic_service_reserve_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3D6B72219564DC00A91F33 /* clinic_service_reserve_appUITests.swift */; };
+		5AC55E40219CB1FF00E38CCD /* iphone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5AC55E3F219CB1FF00E38CCD /* iphone.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,12 +46,9 @@
 		5A3D6B5C219564DC00A91F33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A3D6B5E219564DC00A91F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A3D6B63219564DC00A91F33 /* clinic_service_reserve_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clinic_service_reserve_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A3D6B67219564DC00A91F33 /* clinic_service_reserve_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clinic_service_reserve_appTests.swift; sourceTree = "<group>"; };
-		5A3D6B69219564DC00A91F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A3D6B6E219564DC00A91F33 /* clinic_service_reserve_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clinic_service_reserve_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A3D6B72219564DC00A91F33 /* clinic_service_reserve_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clinic_service_reserve_appUITests.swift; sourceTree = "<group>"; };
-		5A3D6B74219564DC00A91F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AB42B59219AB21B00920E70 /* clinic_service_reserve_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = clinic_service_reserve_app.entitlements; sourceTree = "<group>"; };
+		5AC55E3F219CB1FF00E38CCD /* iphone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = iphone.mp3; sourceTree = "<group>"; };
 		98E6A9D8F1F81A5A9FEC500B /* Pods-clinic_service_reserve_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clinic_service_reserve_app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-clinic_service_reserve_app/Pods-clinic_service_reserve_app.debug.xcconfig"; sourceTree = "<group>"; };
 		D044A5B64586AE32380E8C60 /* Pods_clinic_service_reserve_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_clinic_service_reserve_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -95,9 +91,8 @@
 		5A3D6B46219564DA00A91F33 = {
 			isa = PBXGroup;
 			children = (
+				5AC55E3E219CB1E000E38CCD /* sound_tracks */,
 				5A3D6B51219564DA00A91F33 /* clinic_service_reserve_app */,
-				5A3D6B66219564DC00A91F33 /* clinic_service_reserve_appTests */,
-				5A3D6B71219564DC00A91F33 /* clinic_service_reserve_appUITests */,
 				5A3D6B50219564DA00A91F33 /* Products */,
 				1DFC129E162D6D0950856ED2 /* Pods */,
 				CFDEF5BE5C38F76BE6E56CCA /* Frameworks */,
@@ -130,22 +125,12 @@
 			path = clinic_service_reserve_app;
 			sourceTree = "<group>";
 		};
-		5A3D6B66219564DC00A91F33 /* clinic_service_reserve_appTests */ = {
+		5AC55E3E219CB1E000E38CCD /* sound_tracks */ = {
 			isa = PBXGroup;
 			children = (
-				5A3D6B67219564DC00A91F33 /* clinic_service_reserve_appTests.swift */,
-				5A3D6B69219564DC00A91F33 /* Info.plist */,
+				5AC55E3F219CB1FF00E38CCD /* iphone.mp3 */,
 			);
-			path = clinic_service_reserve_appTests;
-			sourceTree = "<group>";
-		};
-		5A3D6B71219564DC00A91F33 /* clinic_service_reserve_appUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5A3D6B72219564DC00A91F33 /* clinic_service_reserve_appUITests.swift */,
-				5A3D6B74219564DC00A91F33 /* Info.plist */,
-			);
-			path = clinic_service_reserve_appUITests;
+			path = sound_tracks;
 			sourceTree = "<group>";
 		};
 		CFDEF5BE5C38F76BE6E56CCA /* Frameworks */ = {
@@ -271,6 +256,7 @@
 				5A3D6B5D219564DC00A91F33 /* LaunchScreen.storyboard in Resources */,
 				5A3D6B5A219564DC00A91F33 /* Assets.xcassets in Resources */,
 				5A3D6B58219564DA00A91F33 /* Main.storyboard in Resources */,
+				5AC55E40219CB1FF00E38CCD /* iphone.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +340,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A3D6B68219564DC00A91F33 /* clinic_service_reserve_appTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +347,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A3D6B73219564DC00A91F33 /* clinic_service_reserve_appUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,18 +8,30 @@
 
 import UIKit
 import CocoaMQTT
+import AVFoundation
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var patientNumberLabel: UILabel!
     @IBOutlet weak var currentNumberLabel: UILabel!
     @IBOutlet weak var qrCodeImageView: UIImageView!
+    
+    var audioPlayer = AVAudioPlayer()
     var subscribeBool: Bool = false
     let mqttClient = CocoaMQTT(clientID: "iOS Device", host: "35.220.213.62", port: 1883)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let path = Bundle.main.path(forResource: "iphone", ofType : "mp3")!
+        let url = URL(fileURLWithPath : path)
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+        }
+        catch {
+            print ("There is an issue with this code!")
+        }
         mqtt_config()
     }
 
@@ -39,9 +51,12 @@ class ViewController: UIViewController {
             }
         }
         mqttClient.didReceiveMessage = { mqtt, message, id in
+            self.audioPlayer.play()
             if message.topic == "patientNo"
             {
                 self.patientNumberLabel.text = message.string
+                self.patientNumberLabel.textColor = UIColor.blue
+                self.patientNumberLabel.blink()
                 
                 let data = message.string!.data(using: .ascii, allowLossyConversion: false)
                 let filter = CIFilter(name: "CIQRCodeGenerator")
@@ -60,12 +75,26 @@ class ViewController: UIViewController {
             if message.topic == "currentNo"
             {
                 self.currentNumberLabel.text = message.string
+                self.currentNumberLabel.textColor = UIColor.red
+                self.currentNumberLabel.blink()
                 // do checking if the difference btween current number and patient number is smaller than 10
             }
 
         }
         mqttClient.connect()
     }
-    //123
 }
 
+extension UIView {
+    func blink() {
+        let animation = CABasicAnimation(keyPath: "opacity")
+        animation.isRemovedOnCompletion = false
+        animation.fromValue           = 1
+        animation.toValue             = 0
+        animation.duration            = 0.8
+        animation.autoreverses        = true
+        animation.repeatCount         = 2
+        animation.beginTime           = CACurrentMediaTime() + 0.5
+        self.layer.add(animation, forKey: nil)
+    }
+}
