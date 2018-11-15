@@ -14,7 +14,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var patientNumberLabel: UILabel!
     @IBOutlet weak var currentNumberLabel: UILabel!
-    @IBOutlet weak var qrCodeImageView: UIImageView!
+    @IBOutlet weak var reserveButton: UIButton!
+    @IBOutlet weak var popUpQRcodeButton: UIButton!
+    
     
     var audioPlayer = AVAudioPlayer()
     var subscribeBool: Bool = false
@@ -37,8 +39,27 @@ class ViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        let reserve:ReserveViewController = segue.destination as! ReserveViewController
-        reserve.mqttClient = mqttClient
+        let button = sender as! UIButton
+        if button == reserveButton {
+            let reserve:ReserveViewController = segue.destination as! ReserveViewController
+            reserve.mqttClient = mqttClient
+        }
+        else if button == popUpQRcodeButton {
+            if let _ = Int64(patientNumberLabel.text!) {
+                let qrCode:PopUpQrCodeViewController = segue.destination as! PopUpQrCodeViewController
+                qrCode.patientNo = patientNumberLabel.text!
+            }
+            else {
+                // alert
+                let alert = UIAlertController(title: "Reservation Is not Yet Done", message: "You do not have your reservation number", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "Close",style: .default, handler:{(action: UIAlertAction!) in print("Reservation Is not Yet Done")}))
+                
+                // show the number on label
+                self.present(alert,animated: true, completion: nil)
+            }
+        }
+        
+
     }
     
     func mqtt_config()
@@ -57,13 +78,6 @@ class ViewController: UIViewController {
                 self.patientNumberLabel.text = message.string
                 self.patientNumberLabel.textColor = UIColor.blue
                 self.patientNumberLabel.blink()
-                
-                let data = message.string!.data(using: .ascii, allowLossyConversion: false)
-                let filter = CIFilter(name: "CIQRCodeGenerator")
-                filter?.setValue(data, forKey: "inputMessage")
-                
-                let img = UIImage(ciImage: (filter?.outputImage)!)
-                self.qrCodeImageView.image = img
                 
                 // alert
                 let alert = UIAlertController(title: "Reservation Success", message: "Your reservation number is \(message.string!)", preferredStyle: UIAlertController.Style.alert)
