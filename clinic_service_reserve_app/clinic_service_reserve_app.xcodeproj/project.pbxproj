@@ -13,6 +13,7 @@
 		5A3D6B58219564DA00A91F33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D6B56219564DA00A91F33 /* Main.storyboard */; };
 		5A3D6B5A219564DC00A91F33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D6B59219564DC00A91F33 /* Assets.xcassets */; };
 		5A3D6B5D219564DC00A91F33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D6B5B219564DC00A91F33 /* LaunchScreen.storyboard */; };
+		5A4C8757219F19B2003C62F7 /* Pods_clinic_service_reserve_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4C8756219F19B2003C62F7 /* Pods_clinic_service_reserve_app.framework */; };
 		5AC55E40219CB1FF00E38CCD /* iphone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5AC55E3F219CB1FF00E38CCD /* iphone.mp3 */; };
 		5ACD0987219DB2D80026B7B8 /* PopUpQrCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACD0986219DB2D80026B7B8 /* PopUpQrCodeViewController.swift */; };
 		5AD12A3D219EA415004D9A3B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AD12A3B219EA415004D9A3B /* Model.xcdatamodeld */; };
@@ -48,6 +49,7 @@
 		5A3D6B5E219564DC00A91F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A3D6B63219564DC00A91F33 /* clinic_service_reserve_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clinic_service_reserve_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A3D6B6E219564DC00A91F33 /* clinic_service_reserve_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clinic_service_reserve_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A4C8756219F19B2003C62F7 /* Pods_clinic_service_reserve_app.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_clinic_service_reserve_app.framework; path = "../../../Library/Developer/Xcode/DerivedData/clinic_service_reserve_app-ftmspniitrguuobvhxccaywncfvq/Build/Products/Debug-iphoneos/Pods_clinic_service_reserve_app.framework"; sourceTree = "<group>"; };
 		5AB42B59219AB21B00920E70 /* clinic_service_reserve_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = clinic_service_reserve_app.entitlements; sourceTree = "<group>"; };
 		5AC55E3F219CB1FF00E38CCD /* iphone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = iphone.mp3; sourceTree = "<group>"; };
 		5ACD0986219DB2D80026B7B8 /* PopUpQrCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpQrCodeViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A4C8757219F19B2003C62F7 /* Pods_clinic_service_reserve_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +142,7 @@
 		CFDEF5BE5C38F76BE6E56CCA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5A4C8756219F19B2003C62F7 /* Pods_clinic_service_reserve_app.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
