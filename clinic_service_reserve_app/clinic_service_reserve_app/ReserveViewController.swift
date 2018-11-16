@@ -12,6 +12,7 @@ import CocoaMQTT
 class ReserveViewController: UIViewController, UITextFieldDelegate
 {
 
+    @IBOutlet weak var reserveDatePicker: UIDatePicker!
     @IBOutlet weak var patientNameTextField: UITextField!
     @IBOutlet weak var patientAgeTextField: UITextField!
     @IBOutlet weak var patientSexSegmentedControl: UISegmentedControl!
@@ -27,9 +28,15 @@ class ReserveViewController: UIViewController, UITextFieldDelegate
     
     @IBAction func reserveButtonPressed(_ sender: Any)
     {
+        //get date
+        let selectedDate:Date = reserveDatePicker.date
+        let formatter:DateFormatter = DateFormatter()
+        formatter.dateFormat = "MMM dd,yyyy"
+        let reserve_date = formatter.string(from: selectedDate)
+        
         patientNameTextField.resignFirstResponder()
         patientAgeTextField.resignFirstResponder()
-        if let patient_age = Int64(patientAgeTextField.text!), let patient_name = patientNameTextField.text
+        if let patient_age = patientAgeTextField.text, let patient_name = patientNameTextField.text
         {
             //assign sex
             var patient_sex: String = ""
@@ -43,7 +50,7 @@ class ReserveViewController: UIViewController, UITextFieldDelegate
             }
             
             //put the infomation into a dictionary
-            let dictionary = ["patient_name": patient_name, "patient_age": patient_age, "patient_sex": patient_sex] as [String : Any]
+            let dictionary = ["patient_name": patient_name, "patient_age": patient_age, "patient_sex": patient_sex, "reserve_date": reserve_date] as [String : Any]
             
             //cast the dictionary into json string
             let jsonData = try! JSONSerialization.data(withJSONObject: dictionary)

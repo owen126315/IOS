@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C8C51A1FE88B0045677928C /* Pods_clinic_service_reserve_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D044A5B64586AE32380E8C60 /* Pods_clinic_service_reserve_app.framework */; };
 		5A12751C219591DA0043C265 /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A12751B219591DA0043C265 /* ReserveViewController.swift */; };
 		5A3D6B53219564DA00A91F33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3D6B52219564DA00A91F33 /* AppDelegate.swift */; };
 		5A3D6B55219564DA00A91F33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3D6B54219564DA00A91F33 /* ViewController.swift */; };
@@ -16,6 +15,7 @@
 		5A3D6B5D219564DC00A91F33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D6B5B219564DC00A91F33 /* LaunchScreen.storyboard */; };
 		5AC55E40219CB1FF00E38CCD /* iphone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5AC55E3F219CB1FF00E38CCD /* iphone.mp3 */; };
 		5ACD0987219DB2D80026B7B8 /* PopUpQrCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACD0986219DB2D80026B7B8 /* PopUpQrCodeViewController.swift */; };
+		5AD12A3D219EA415004D9A3B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AD12A3B219EA415004D9A3B /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,8 @@
 		5AB42B59219AB21B00920E70 /* clinic_service_reserve_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = clinic_service_reserve_app.entitlements; sourceTree = "<group>"; };
 		5AC55E3F219CB1FF00E38CCD /* iphone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = iphone.mp3; sourceTree = "<group>"; };
 		5ACD0986219DB2D80026B7B8 /* PopUpQrCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpQrCodeViewController.swift; sourceTree = "<group>"; };
+		5AD12A3C219EA415004D9A3B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		98E6A9D8F1F81A5A9FEC500B /* Pods-clinic_service_reserve_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clinic_service_reserve_app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-clinic_service_reserve_app/Pods-clinic_service_reserve_app.debug.xcconfig"; sourceTree = "<group>"; };
-		D044A5B64586AE32380E8C60 /* Pods_clinic_service_reserve_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_clinic_service_reserve_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C8C51A1FE88B0045677928C /* Pods_clinic_service_reserve_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +123,7 @@
 				5A3D6B59219564DC00A91F33 /* Assets.xcassets */,
 				5A3D6B5B219564DC00A91F33 /* LaunchScreen.storyboard */,
 				5A3D6B5E219564DC00A91F33 /* Info.plist */,
+				5AD12A3B219EA415004D9A3B /* Model.xcdatamodeld */,
 			);
 			path = clinic_service_reserve_app;
 			sourceTree = "<group>";
@@ -139,7 +139,6 @@
 		CFDEF5BE5C38F76BE6E56CCA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D044A5B64586AE32380E8C60 /* Pods_clinic_service_reserve_app.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -335,6 +334,7 @@
 			files = (
 				5A3D6B55219564DA00A91F33 /* ViewController.swift in Sources */,
 				5A3D6B53219564DA00A91F33 /* AppDelegate.swift in Sources */,
+				5AD12A3D219EA415004D9A3B /* Model.xcdatamodeld in Sources */,
 				5A12751C219591DA0043C265 /* ReserveViewController.swift in Sources */,
 				5ACD0987219DB2D80026B7B8 /* PopUpQrCodeViewController.swift in Sources */,
 			);
@@ -668,6 +668,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5AD12A3B219EA415004D9A3B /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5AD12A3C219EA415004D9A3B /* Model.xcdatamodel */,
+			);
+			currentVersion = 5AD12A3C219EA415004D9A3B /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5A3D6B47219564DA00A91F33 /* Project object */;
 }
