@@ -8,6 +8,7 @@
 
 import UIKit
 import CocoaMQTT
+import CoreData
 
 class ReserveViewController: UIViewController, UITextFieldDelegate
 {
@@ -19,6 +20,13 @@ class ReserveViewController: UIViewController, UITextFieldDelegate
     
     var mqttClient:CocoaMQTT?
     
+    var personal : [Personal] = []
+  
+    
+    
+    let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     
     @IBAction func sexSelected(_ sender: Any)
     {
@@ -28,11 +36,7 @@ class ReserveViewController: UIViewController, UITextFieldDelegate
     
     @IBAction func reserveButtonPressed(_ sender: Any)
     {
-        //get date
-        let selectedDate:Date = reserveDatePicker.date
-        let formatter:DateFormatter = DateFormatter()
-        formatter.dateFormat = "MMM dd,yyyy"
-        let reserve_date = formatter.string(from: selectedDate)
+
         
         patientNameTextField.resignFirstResponder()
         patientAgeTextField.resignFirstResponder()
@@ -50,7 +54,7 @@ class ReserveViewController: UIViewController, UITextFieldDelegate
             }
             
             //put the infomation into a dictionary
-            let dictionary = ["patient_name": patient_name, "patient_age": patient_age, "patient_sex": patient_sex, "reserve_date": reserve_date] as [String : Any]
+            let dictionary = ["patient_name": patient_name, "patient_age": patient_age, "patient_sex": patient_sex] as [String : Any]
             
             //cast the dictionary into json string
             let jsonData = try! JSONSerialization.data(withJSONObject: dictionary)
@@ -96,6 +100,46 @@ class ReserveViewController: UIViewController, UITextFieldDelegate
         patientNameTextField.delegate = self
         patientAgeTextField.delegate = self
         // Do any additional setup after loading the view.
+        do{
+            
+            personal = try context.fetch(Personal.fetchRequest())
+            var name: String = ""
+            var age = ""
+            var isMale = true
+            if personal.count > 0 {
+                for person in personal{
+                    name = person.name!
+                    age = person.age!
+                    if (person.gender! == "Male"){
+                        isMale = true
+                    }
+                    else
+                    {
+                        isMale = false
+                    }
+                }
+                
+                patientNameTextField.text = name
+                patientAgeTextField.text = age
+                
+                if isMale{
+                    patientSexSegmentedControl.selectedSegmentIndex = 0
+                }else{
+                    patientSexSegmentedControl.selectedSegmentIndex = 1
+                }
+             
+                
+                print("old")
+            }
+            else
+            {
+            
+                print("new")
+            }
+        }catch{
+            
+        }
+        
     }
     
     

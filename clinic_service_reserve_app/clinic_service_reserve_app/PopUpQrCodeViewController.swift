@@ -28,8 +28,8 @@ class PopUpQrCodeViewController: UIViewController {
          self.qrCodeImageView.image = img
  
     }
-    
     @IBAction func exit(_ sender: Any) {
+     
         dismiss(animated: true, completion: nil)
     }
     

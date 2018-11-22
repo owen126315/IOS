@@ -18,11 +18,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var currentNumberLabel: UILabel!
     @IBOutlet weak var reserveButton: UIButton!
     @IBOutlet weak var QRCodeButton: UIButton!
+    @IBOutlet weak var infoBar: UIBarButtonItem!
     
     //@IBOutlet weak var reserveTableView: UITableView!
     
     
-    var reservations: [Reserves] = []
     var audioPlayer = AVAudioPlayer()
     var subscribeBool: Bool = false
     let mqttClient = CocoaMQTT(clientID: "iOS Device", host: "35.220.213.62", port: 1883)
@@ -50,13 +50,18 @@ class ViewController: UIViewController {
 */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        let button = sender as! UIButton
-        if button == reserveButton {
+
+        if sender as? UIBarButtonItem == infoBar {
+            let _:InfoViewController = segue.destination as! InfoViewController
+            return
+        }
+        
+        if sender as? UIButton == reserveButton {
             let reserve:ReserveViewController = segue.destination as! ReserveViewController
             reserve.mqttClient = mqttClient
         }
             
-        else if button == QRCodeButton {
+        else if sender as? UIButton == QRCodeButton {
             if let _ = Int64(patientNumberLabel.text!) {
                 let qrCode:PopUpQrCodeViewController = segue.destination as! PopUpQrCodeViewController
                 qrCode.patientNo = patientNumberLabel.text!
@@ -74,33 +79,6 @@ class ViewController: UIViewController {
 
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return reservations.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        let reserve = reservations[indexPath.row]
-        cell.textLabel?.text = "Name : \(reserve.patient_name!)  Date : \(reserve.reserve_date!) Patient Number : \(reserve.patient_No!)"
-        return cell
-    }
-    
-    func getData()
-    {
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        do
-        {
-            reservations = try context.fetch(Reserves.fetchRequest())
-        }
-        catch
-        {
-            print("Fatched Failed")
-        }
-    }
     
     func mqtt_config()
     {
@@ -109,6 +87,7 @@ class ViewController: UIViewController {
             {
                 mqtt.subscribe("patientNo", qos: CocoaMQTTQOS.qos2)
                 mqtt.subscribe("currentNo", qos: CocoaMQTTQOS.qos2)
+               
             }
         }
         mqttClient.didReceiveMessage = { mqtt, message, id in
@@ -120,7 +99,7 @@ class ViewController: UIViewController {
                 
                 do {
                     let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String: AnyObject]
-                    if let name = json["patient_name"], let num = json["patient_No"], let sex = json["patient_sex"], let age = json["patient_age"], let date = json["reserve_date"]  {
+                    if let name = json["patient_name"], let num = json["patient_No"] {
                         /*
                         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
                         let reserve = Reserves(context: context)
@@ -143,8 +122,8 @@ class ViewController: UIViewController {
                         self.QRCodeButton.isHidden = false
                         
                         // alert
-                        let alert = UIAlertController(title: "Reservation Success", message: "Patient Name:\(name) \nPatient Number: \(num) \nReserve Date: \(date)", preferredStyle: UIAlertController.Style.alert)
-                        alert.addAction(UIAlertAction(title: "Close",style: .default, handler:{(action: UIAlertAction!) in print("Patient Name:\(name) \nPatient Number: \(num) \nReserve Date: \(date)")}))
+                        let alert = UIAlertController(title: "Reservation Success", message: "Patient Name:\(name) \nPatient Number: \(num)", preferredStyle: UIAlertController.Style.alert)
+                        alert.addAction(UIAlertAction(title: "Close",style: .default, handler:{(action: UIAlertAction!) in print("Patient Name:\(name) \nPatient Number: \(num)")}))
                          
                         // show the number on label
                         self.present(alert,animated: true, completion: nil)
@@ -152,23 +131,42 @@ class ViewController: UIViewController {
                 } catch let error as NSError {
                     print("Failed to load: \(error.localizedDescription)")
                 }
-                
-                
- 
+
+                /*
+                {
+                "patient_age": "67",
+                "patient_sex": "Male",
+                "patient_name": "nh",
+                "patient_No":"365"
+                 }
+                */
 
             }
             if message.topic == "currentNo"
             {
                 self.currentNumberLabel.text = message.string
+                self.currentNumberLabel.textColor = UIColor.green
+                let remain = Int(self.patientNumberLabel.text!)! - Int(self.currentNumberLabel.text!)!
+                if remain < 11 {
+                    
+                    if remain == 10 {
+                        let alert = UIAlertController(title: "Remaining 10 perple !", message: "Please go to hospital and wait for calling", preferredStyle: UIAlertController.Style.alert)
+                        alert.addAction(UIAlertAction(title: "Close",style: .default, handler:{(action: UIAlertAction!) in }))
+                        
+                        // show the number on label
+                        self.present(alert,animated: true, completion: nil)
+                    }
                 self.currentNumberLabel.textColor = UIColor.red
                 self.currentNumberLabel.blink()
+                }
+                
+                
                 // do checking if the difference btween current number and patient number is smaller than 10
             }
 
         }
         mqttClient.connect()
     }
-    
 }
 
 extension UIView {
